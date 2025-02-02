@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+f8f8ff
+body {
+    background-color: var(--s-bg-color);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3rem;
+}
+
+:root {
+    --accent-color: #0080de;
+    --text-color: #faf9f6;
+    --bg-color: #000016;
+    --s-bg-color: #d7d7d7;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+    /************ HEADER DESIGN **************/
+
+header {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.left-head {
+    flex: 1;
+    cursor: default;
+}
+.left-head a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: .3s ease-out;
+}
+.left-head a:hover {
+    color: var(--accent-color);
+}
+
+.middle-head {
+    flex: 1;
+}
+.middle-head h1 {
+    color: var(--text-color);
+    text-align: center;
+    cursor: default;
+}
+
+.right-head {
+    flex: 1;
+    text-align: right;
+    cursor: default;
+}
+.right-head a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: .3s ease-out;
+}
+.right-head a:hover {
+    color: var(--accent-color);
+}
+
+#ham-menu {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media(max-width: 720px){
+    .left-head, .right-head{
+        display: none;
+    }
+
+    #ham-menu {
+        display: flex;
+    }
+}
+
+/************ DROP-DOWN SECTION DESIGN **************/
+
+    .dropdown {
+        background-color: var(--text-color);
+        color: var(--text-color);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 222;
+    }
+
+    .dr-center {
+        text-align: center;
+    }
+
+    .options {
+        text-align: center ;
+    }
+    
+    .options a {
+        display: block;
+        color: var(--bg-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 1rem 0;
+    }
+
+    .socials {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .socials a {
+        color: var(--bg-color);
+        margin: 5rem 1rem 0;
+    }
+
+    #x-mark {
+        font-size: 3rem;
+        color: var(--bg-color);
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+    /************ WORK SECTION DESIGN **************/
+
+
+.work-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(15, 16, 22,0.7),rgba(15, 16, 22,0.7)), url(pictures/StockCake-Laptop\ Nature\ Display_1735641628.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.work-center {
+    padding: 0 2rem;
+    text-align: center;
+}
+.work-center h1 {
+    color: var(--text-color);
+    font-size: 4rem;
+    cursor: default;
+}
+
+#xc {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    margin-top: 8rem;
+    animation-name: float;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.typed {
+    color: var(--accent-color);
+}
+    
+@media(max-width: 720px){
+    .work-center h1 {
+        font-size: 2rem;
+    }
+}
+
+/************ SPECIALS SECTION DESIGN **************/
+
+.specials {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.specials h1 {
+    text-align: center;
+}
+
+.sp {
+    color: var(--accent-color);
+}
+
+.monthly-specials {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .2rem;
+    padding-top: .8rem;
+}
+
+.monthly-specials img {
+    width: 100%;
+}
+
+@media(max-width: 720px){
+    .monthly-specials {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: .5rem;
+    }
+    .specials {
+        padding: 1rem;
+    }
+}
+
+/************ SECOND WORKS SECTION DESIGN **************/
+
+.spcd {
+    color: var(--accent-color);
+}
+
+.sclass-works {
+    padding: 0 5rem 5rem 5rem;
+    min-height: 100vh;
+    text-align: center;
+    color: var(--bg-color);
+    
+}
+.sclass-works h1 {
+    font-weight: 700;
+    margin: .3rem;
+}
+
+.sclass-works h4 {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+.pictures-grid img {
+    width: 100%;
+}
+
+.spictures-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: .2rem;
+}
+
+.spictures-grid img {
+    width: 100%;
+}
+
+.sclass-works h4 {
+    padding-bottom: 2rem;
+}
+
+.click-btn {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-20px);
+    transform: translateX(-10px);
+}
+
+.whatsapp-icon img{
+    width: 3rem;
+    animation-name: float;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 2s;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 720px){
+    .spictures-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: .5rem;
+    }
+
+    .sclass-works {
+        padding: 1rem;
+    }
+}

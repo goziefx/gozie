@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+body {
+    background-color: #f8f8ff;
+}
+
+:root {
+    --accent-color: #0080de;
+    --text-color: #faf9f6;
+    --bg-color: #000016;
+    --s-bg-color: #070e38;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+}
+
+    /************ HEADER DESIGN **************/
+
+header {
+    background-color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.left-head {
+    flex: 1;
+    cursor: default;
+}
+.left-head a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: .3s ease-out;
+}
+.left-head a:hover {
+    color: var(--accent-color);
+}
+
+.middle-head {
+    flex: 1;
+}
+.middle-head h1 {
+    color: var(--text-color);
+    text-align: center;
+    cursor: default;
+}
+
+.right-head {
+    flex: 1;
+    text-align: right;
+    cursor: default;
+}
+.right-head a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 0 0.3rem;
+    transition: .3s ease-out;
+}
+.right-head a:hover {
+    color: var(--accent-color);
+}
+
+#ham-menu {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+
+@media(max-width: 720px){
+    .left-head, .right-head{
+        display: none;
+    }
+
+    #ham-menu {
+        display: flex;
+    }
+}
+
+/************ DROP-DOWN SECTION DESIGN **************/
+
+    .dropdown {
+        background-color: var(--text-color);
+        color: var(--text-color);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: 222;
+    }
+
+    .dr-center {
+        text-align: center;
+    }
+
+    .options {
+        text-align: center ;
+    }
+    
+    .options a {
+        display: block;
+        color: var(--bg-color);
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        margin: 1rem 0;
+    }
+
+    .socials {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .socials a {
+        color: var(--bg-color);
+        margin: 5rem 1rem 0;
+    }
+
+    #x-mark {
+        font-size: 3rem;
+        color: var(--bg-color);
+        text-align: center;
+        margin-top: 5rem;
+    }
+
+/******* BANNER DESIGN **********/
+
+.banner {
+    background-image: linear-gradient(rgba(15, 16, 22, 0.753),rgba(15, 16, 22, 0.753)), url(pictures/StockCake-Laptop\ Nature\ Display_1735641628.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    color: var(--text-color);
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+
+.about {
+    padding: 2rem 1rem;
+}
+
+.about-me {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 20px;
+}
+
+.a-text h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.a-text p{
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.services h1{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.services-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+
+.graphic {
+    text-align: center;
+    background-color: var(--accent-color);
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.graphic h2 {
+    font-size: 1rem;
+}
+
+.click {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.click-btn {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.click-mobile {
+    display: none;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.click-btn-mobile {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 1rem;
+    background-color: var(--accent-color);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+@media(max-width: 720px){
+    .about-me {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .services-in {
+        grid-template-columns: 1fr;
+        row-gap: 16px;
+    }
+
+    .click {
+        display: none;
+    }
+
+    .click-mobile {
+        display: block;
+    }
+}
