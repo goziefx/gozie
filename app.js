@@ -38,8 +38,6 @@ ScrollReveal().reveal('.work-center, .sp', { delay: 500, origin: 'top' });
 ScrollReveal().reveal('.spcd', { delay: 500, origin: 'left' });
 
 
-ScrollReveal().reveal('.click-btn', { delay: 100, origin: 'right' });
-
 ScrollReveal().reveal('.one', { delay: 50, origin: 'left' });
 ScrollReveal().reveal('.two', { delay: 50, origin: 'top' });
 ScrollReveal().reveal('.three', { delay: 50, origin: 'right' });
